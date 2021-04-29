@@ -222,8 +222,10 @@ nav a:hover {
 	box-shadow: 0 0 60px -10px var(--shadow);
 }
 .service h3 {
-	color: var(--bold400);
+	padding: 0 .5rem;
 	text-shadow: 0 0 10px var(--shadow);
+	background-color: var(--bold600);
+	border-radius: 10px;
 }
 
 .quote {
@@ -242,17 +244,44 @@ nav a:hover {
 	text-shadow: 0 0 10px var(--shadow);
 }
 
-
 footer {
-	/* -webkit-transform: skewY(-5deg);
+	box-shadow: 0 0 10px var(--bold400);
+
+	-webkit-transform: skewY(-5deg);
 	-moz-transform: skewY(-5deg);
 	-ms-transform: skewY(-5deg);
 	-o-transform: skewY(-5deg);
-	transform: skewY(-5deg); */
+	transform: skewY(-5deg);
+}
+footer h2:not(.form-of-contact h2), .contact-grid {
+	-webkit-transform: skewY(5deg);
+	-moz-transform: skewY(5deg);
+	-ms-transform: skewY(5deg);
+	-o-transform: skewY(5deg);
+	transform: skewY(5deg);
+}
+footer h2 {
+	text-align: center;
+}
+.contact-grid {
+	margin-top: 2rem;
 
-	background-color: var(--black600);
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 3rem;
+	text-align: left;
+}
+.form-of-contact {
+	padding: 1rem;
 
-	border-width:150px 0 150px 400px;
-    border-style:solid;
-    border-color: var(--bold600) transparent #d71f55 transparent;
+	border-radius: 10px;
+	box-shadow: 0 0 10px var(--bold400);
+	background-color: var(--light600);
+}
+.form-of-contact h3 {
+	color: var(--bold400);
+	text-shadow: 0 0 10px var(--shadow);
+}
+.form-of-contact p {
+	width: 60%;
 }

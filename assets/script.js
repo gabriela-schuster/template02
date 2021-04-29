@@ -5,7 +5,6 @@ let i = 0
 setInterval(mudaImg, 5000)
 
 function mudaImg() {
-	console.log(i);
 	carImg.src = imgsSrc[i]
 	i++
 	if (i === 2) i = 0
